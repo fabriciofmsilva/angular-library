@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build --prod example-ng6-lib",
+    "npm:pack": "cd dist/example-ng6-lib && npm pack",
+    "package": "npm run build:lib && npm run npm:pack",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
